@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SolarMeshRepeater_Lib")(type "KiCad")(uri "${KIPRJMOD}/own_lib/SolarMeshRepeater_Lib.kicad_sym")(options "")(descr ""))
+)
