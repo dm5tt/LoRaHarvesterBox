@@ -16,6 +16,27 @@ For persistent data storage, an optional FRAM IC (Infineon FM24V10) can be mount
 The power supply design is highly flexible: alongside standard JST-PH connectors, the board also supports very small LiPo batteries (commonly used in in-ear headphones or Bluetooth headsets), which can be soldered directly. Such batteries are readily available on AliExpress (e.g. 501010). The TI BQ25570 also supports exotic sources like Supercaps, LTO, etc.
 
 
+## Design Decisions
+
+### Why did you use the TI BQ25570?
+
+It's the only energy harvester that supports up to 110mA peak current.
+
+I'm not overly happy with this device as it lacks a few helpful features:
+
+ - No I²C access and ADC for reading voltages/currents
+
+ - No Thermistor for switching off charging above and below specific temperatures
+
+ 
+### Why not not buying a "naked" ST STM32WLE5? 
+
+Using a SoC module from RAK brings all the HF and impedancy matching. 
+
+Every leaving the housing is mostly not critically signal wise.
+
+Also it's not too expensive with 6€.
+
 ## Hardware
 
 Will publish Resistor values as soon first PCBs arrived for testing.
