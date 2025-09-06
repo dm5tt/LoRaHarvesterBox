@@ -6638,7 +6638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "019355fd-2875-44b5-a272-42385fc8154a")
-		(property "Reference" "ROK1"
+		(property "Reference" "ROK3"
 			(at 375.92 203.1999 0)
 			(effects
 				(font
@@ -6692,7 +6692,7 @@
 		(instances
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
-					(reference "ROK1")
+					(reference "ROK3")
 					(unit 1)
 				)
 			)
@@ -6708,7 +6708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03db0ea7-b258-4add-b70e-2a3784d7bb18")
-		(property "Reference" "ROUT2"
+		(property "Reference" "ROUT1"
 			(at 388.62 222.2499 0)
 			(effects
 				(font
@@ -6762,7 +6762,7 @@
 		(instances
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
-					(reference "ROUT2")
+					(reference "ROUT1")
 					(unit 1)
 				)
 			)
@@ -8750,7 +8750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58cbbe3f-a8a0-4f78-a0e9-cad2aa4c2eaa")
-		(property "Reference" "ROUT1"
+		(property "Reference" "ROUT2"
 			(at 388.62 208.2799 0)
 			(effects
 				(font
@@ -8804,7 +8804,7 @@
 		(instances
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
-					(reference "ROUT1")
+					(reference "ROUT2")
 					(unit 1)
 				)
 			)
@@ -9101,7 +9101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c1a865d-aa77-4481-837b-2a0651b67c3f")
-		(property "Reference" "ROV1"
+		(property "Reference" "ROV2"
 			(at 359.41 208.2799 0)
 			(effects
 				(font
@@ -9155,7 +9155,7 @@
 		(instances
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
-					(reference "ROV1")
+					(reference "ROV2")
 					(unit 1)
 				)
 			)
@@ -10380,7 +10380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9980579f-d1f8-43a2-bb64-dd733f1543d5")
-		(property "Reference" "ROK3"
+		(property "Reference" "ROK1"
 			(at 375.92 227.3299 0)
 			(effects
 				(font
@@ -10434,7 +10434,7 @@
 		(instances
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
-					(reference "ROK3")
+					(reference "ROK1")
 					(unit 1)
 				)
 			)
@@ -10516,7 +10516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b30a5a6-a4bc-4d49-8b1e-256cca980ffb")
-		(property "Reference" "ROV2"
+		(property "Reference" "ROV1"
 			(at 359.41 222.2499 0)
 			(effects
 				(font
@@ -10570,7 +10570,7 @@
 		(instances
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
-					(reference "ROV2")
+					(reference "ROV1")
 					(unit 1)
 				)
 			)
