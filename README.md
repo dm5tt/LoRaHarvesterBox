@@ -2,7 +2,7 @@
 
 ## What is this thing?
 
-This generic LoRa base board is built around the STM32WL (RAK3172) and the TI BQ25570 energy harvester.
+This generic LoRa base board is built around the ST STM32WLE5 (RAK3172) and the TI BQ25570 energy harvester.
 
 It is suitable for a wide range of applications, including:
 
