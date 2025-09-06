@@ -37,6 +37,10 @@ Every leaving the housing is mostly not critically signal wise.
 
 Also it's not too expensive with 6€.
 
+### Why 3V and not 3.3V?
+
+Improved system runtime by only loosing 1-2dB of TX power.
+
 ## Hardware
 
 Will publish Resistor values as soon first PCBs arrived for testing.
