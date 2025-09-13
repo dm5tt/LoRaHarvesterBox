@@ -43,9 +43,40 @@ Improved system runtime by only loosing 1-2dB of TX power.
 
 ## Hardware
 
-Will publish Resistor values as soon first PCBs arrived for testing.
+### Resistors for V_OV
 
-WARNING: PCB not yet tested! 
+Values close to the E24 resistor series.1
+
+**VBAT_OV Settings**
+
+| R_OV1 (E24) | R_OV2 (E24) | R_SUM (MΩ) | V_OV (V)  |
+|-------------|-------------|------------|-----------|
+| 3.90 MΩ     | 5.10 MΩ     | 9.00       | 4.18846   |
+| 3.60 MΩ     | 4.70 MΩ     | 8.30       | 4.18458   |
+| 3.30 MΩ     | 4.30 MΩ     | 7.60       | 4.18000   |
+| 4.30 MΩ     | 5.60 MΩ     | 9.90       | 4.17872   |
+| 5.10 MΩ     | 6.20 MΩ     | 11.90      | 4.02147   |
+
+
+**VOUT Settings**
+
+| Target VOUT | R_OUT1 (E24) | R_OUT2 (E24) | R_SUM (MΩ) | Calculated VOUT |
+|-------------|--------------|--------------|------------|-----------------|
+| 1.8 V       | 8.66 MΩ       | 4.22 MΩ       | 12.88      | ≈ 1.80 V        |
+| 3.0 V       | 5.10 MΩ       | 7.50 MΩ       | 12.60      | ≈ 2.99 V        |
+| 3.3 V       | 4.70 MΩ       | 8.20 MΩ       | 12.90      | ≈ 3.32 V        |
+
+
+
+**VBAT_OK_PROG and VBAT_OK_HYST**
+
+| R_OK1 (E24) | R_OK2 (E24) | R_OK3 (E24) | Sum (MΩ) | VBAT_OK_PROG (V) | VBAT_OK_HYST (V) |
+|-------------|-------------|-------------|----------|------------------|------------------|
+| 4.32 MΩ     | 6.34 MΩ     | 2.15 MΩ     | 12.81    | ≈ 2.99           | ≈ 3.59           |
+| 4.32 MΩ     | 6.80 MΩ     | 1.96 MΩ     | 13.08    | ≈ 3.12           | ≈ 3.66           |
+| 4.32 MΩ     | 7.15 MΩ     | 1.43 MΩ     | 12.90    | ≈ 3.21           | ≈ 3.61           |
+| 4.32 MΩ     | 7.50 MΩ     | 1.10 MΩ     | 12.92    | ≈ 3.31           | ≈ 3.61           |
+| 4.30 MΩ     | 7.50 MΩ     | 0.68 MΩ     | 12.48    | ≈ 3.36           | ≈ 3.55           |
 
 ## License
 
