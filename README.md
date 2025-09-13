@@ -45,8 +45,6 @@ Improved system runtime by only loosing 1-2dB of TX power.
 
 ### Resistors for V_OV
 
-Values close to the E24 resistor series.1
-
 **VBAT_OV Settings**
 
 | R_OV1 (E24) | R_OV2 (E24) | R_SUM (MΩ) | V_OV (V)  |
