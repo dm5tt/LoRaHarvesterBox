@@ -4317,6 +4317,10 @@
 		(uuid "00a77f76-f68a-4201-8dde-9a049e3a6715")
 	)
 	(no_connect
+		(at 173.99 43.18)
+		(uuid "11be7765-84c8-412d-aa8c-6b8cd360c0cc")
+	)
+	(no_connect
 		(at 173.99 40.64)
 		(uuid "2e83c56e-a074-4aaf-a6ad-134e9d6199f2")
 	)
@@ -4327,10 +4331,6 @@
 	(no_connect
 		(at 173.99 50.8)
 		(uuid "67cadc0b-766a-4dbb-a41f-8b4f6eea91d2")
-	)
-	(no_connect
-		(at 173.99 43.18)
-		(uuid "e49392d9-a3db-473a-a3d7-a586a0a0f28f")
 	)
 	(no_connect
 		(at 123.19 48.26)
@@ -6483,16 +6483,6 @@
 			(justify right bottom)
 		)
 		(uuid "86543649-1edf-4858-9efd-7f84a0f2c2e2")
-	)
-	(label "VBAT_OK"
-		(at 180.34 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8e37d40c-f6d4-481e-9f2c-adee691f1d1d")
 	)
 	(label "+3V0"
 		(at 46.99 25.4 270)
