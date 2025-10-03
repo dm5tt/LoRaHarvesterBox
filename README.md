@@ -1,4 +1,5 @@
-![MeshtasticRouterNode](docs/LoraHarvesterBox.jpg)
+![MeshtasticRouterNode](docs/LoraHarvesterBox_front.jpg)
+![MeshtasticRouterNode](docs/LoraHarvesterBox_back.jpg)
 
 ## What is this thing?
 
