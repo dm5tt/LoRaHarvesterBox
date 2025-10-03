@@ -4181,6 +4181,12 @@
 		(uuid "43682c3f-e772-4098-adc8-da0663a48c6c")
 	)
 	(junction
+		(at 41.91 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "492b1793-4ca5-4634-b317-adf722527392")
+	)
+	(junction
 		(at 33.02 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4191,6 +4197,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a43e78f-83fe-4493-a79c-e1ffd01eda9d")
+	)
+	(junction
+		(at 41.91 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b8d7889-e478-4673-9f17-6b088b0eb959")
 	)
 	(junction
 		(at 21.59 147.32)
@@ -4299,6 +4311,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7404898-d2ca-4efe-a3e7-3c90ddf4875e")
+	)
+	(junction
+		(at 24.13 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d04532b6-9a69-4260-be1d-48bab3b23974")
 	)
 	(junction
 		(at 215.9 198.12)
@@ -4866,6 +4884,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 102.87) (xy 24.13 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "400eb8fd-d89e-46e1-97f4-86bd76faf16f")
+	)
+	(wire
+		(pts
 			(xy 119.38 68.58) (xy 123.19 68.58)
 		)
 		(stroke
@@ -5163,6 +5191,16 @@
 			(type default)
 		)
 		(uuid "5f07e7e7-08c0-4583-9a67-54436bcb5a6f")
+	)
+	(wire
+		(pts
+			(xy 38.1 102.87) (xy 41.91 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fe60d63-8e48-41b7-b9fc-48f793d0ffb7")
 	)
 	(wire
 		(pts
@@ -5666,6 +5704,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 95.25) (xy 20.32 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a56825a-6a60-4f36-b906-1b70af7a31f6")
+	)
+	(wire
+		(pts
 			(xy 16.51 21.59) (xy 16.51 31.75)
 		)
 		(stroke
@@ -5783,6 +5831,16 @@
 			(type default)
 		)
 		(uuid "af484db0-ebf6-4b19-8ba7-1d457723fa54")
+	)
+	(wire
+		(pts
+			(xy 20.32 92.71) (xy 24.13 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0aa94de-05dd-414e-9c0e-7f2f422c44c8")
 	)
 	(wire
 		(pts
@@ -5973,6 +6031,16 @@
 			(type default)
 		)
 		(uuid "d02d7240-69ee-42e5-ab7c-b188247c3876")
+	)
+	(wire
+		(pts
+			(xy 38.1 95.25) (xy 41.91 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02f6b00-7ce3-476f-9b81-8e48bc8adc97")
 	)
 	(wire
 		(pts
@@ -8901,6 +8969,75 @@
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 38.1 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d9efd46-42ec-4652-ae24-8d7b49fc4261")
+		(property "Reference" "C10"
+			(at 36.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 37.084 97.028 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 37.1348 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 38.1 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2bdaca6c-8210-4a25-b299-902bd73e310d")
+		)
+		(pin "2"
+			(uuid "334aec26-b4c9-4216-8662-c02604b97705")
+		)
+		(instances
+			(project "LoraHarvesterBox"
+				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -12019,6 +12156,75 @@
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 20.32 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6eb8814-2471-496f-984c-9d7abf781c8e")
+		(property "Reference" "C9"
+			(at 19.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nf"
+			(at 19.304 97.028 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 19.3548 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 20.32 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aaef07a8-dd55-436b-9095-fbb5a76aa24e")
+		)
+		(pin "2"
+			(uuid "e470a81f-2ce3-423d-99db-64335b44ec63")
+		)
+		(instances
+			(project "LoraHarvesterBox"
+				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
+					(reference "C9")
 					(unit 1)
 				)
 			)
