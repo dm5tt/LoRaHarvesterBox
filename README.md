@@ -29,7 +29,7 @@ I'm not overly happy with this device as it lacks a few helpful features:
  - No Thermistor for switching off charging above and below specific temperatures
 
  
-### Why not buying a "naked" ST STM32WLE5? 
+### Why not buying a "naked" ST STM32WLE55? 
 
 Using a SoC module from RAK brings all the HF and impedancy matching. 
 
@@ -40,6 +40,7 @@ Also it's not too expensive with 6€.
 ### Why 3V and not 3.3V?
 
 Improved system runtime by only loosing 1-2dB of TX power.
+
 
 ## Hardware
 
