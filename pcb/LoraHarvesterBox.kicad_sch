@@ -7601,7 +7601,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 53.34 176.5299 0)
 			(effects
 				(font
@@ -7872,7 +7872,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 64.77 53.3399 0)
 			(effects
 				(font
@@ -12850,7 +12850,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nf"
+		(property "Value" "100nF"
 			(at 19.304 97.028 0)
 			(effects
 				(font
@@ -13355,7 +13355,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.01uF"
+		(property "Value" "10nF"
 			(at 155.448 122.936 0)
 			(effects
 				(font
