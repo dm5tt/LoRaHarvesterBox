@@ -13066,6 +13066,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "I2C"
+		(at 117.89 64.83 0)
+		(layer "F.SilkS")
+		(uuid "c61ac1af-8767-40ee-b2db-164e90957648")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "UART2"
 		(at 136.71 78.12 90)
 		(layer "F.SilkS")
@@ -13090,8 +13102,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "I2C"
-		(at 122.72 57.71 90)
+	(gr_text "GND"
+		(at 121.24 57.5 0)
 		(layer "F.SilkS")
 		(uuid "ce96c0a3-d033-4d7c-8a37-7f9304c80a0d")
 		(effects
@@ -13126,6 +13138,30 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "L"
+		(at 121.21 62.06 0)
+		(layer "F.SilkS")
+		(uuid "e141c34c-20b4-4b47-a348-9532bf259811")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Vcc"
+		(at 121.28 59.11 0)
+		(layer "F.SilkS")
+		(uuid "f22e4156-b2a1-43a3-9854-7d891390b35a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "+"
 		(at 115.19 81.47 90)
 		(layer "F.SilkS")
@@ -13134,6 +13170,18 @@
 			(font
 				(size 0.8 0.8)
 				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A"
+		(at 121.32 60.53 0)
+		(layer "F.SilkS")
+		(uuid "fa921cbe-c09d-4978-9f2f-5e622d6259c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.125)
 			)
 			(justify left bottom)
 		)
