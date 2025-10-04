@@ -23,11 +23,17 @@ The power supply design is highly flexible: alongside standard JST-PH connectors
 
 It's the only energy harvester that supports up to 110mA peak current.
 
-I'm not overly happy with this device as it lacks a few helpful features:
+I'm not overly happy with this IC as it lacks a few helpful features:
 
- - No I²C access and ADC for reading voltages/currents
+ - No I²C interface and ADC for reading voltages/currents
 
  - No Thermistor for switching off charging above and below specific temperatures
+
+ - Does't switch off VOUT if the battery hits the lower threshold. It only signals it using a pin.
+
+  - Rather annoying pin configuration. Layouting it doesn't make much fun.
+
+ Honestly: It's an old thing compared to the latest generation from ST or e-peas.
 
  
 ### Why not buying a "naked" ST STM32WLE55? 
