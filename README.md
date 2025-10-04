@@ -33,8 +33,8 @@ I'm not overly happy with this IC as it lacks a few helpful features:
 
   - Rather annoying pin configuration. Layouting it doesn't make much fun.
 
- Honestly: It's an old thing compared to the latest generation from ST or e-peas.
-
+ Honestly - It's an old thing compared to the latest generation from ST or e-peas.
+ 
  
 ### Why not buying a "naked" ST STM32WLE55? 
 
