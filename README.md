@@ -29,18 +29,18 @@ I'm not overly happy with this IC as it lacks a few helpful features:
 
  - No Thermistor for switching off charging above and below specific temperatures
 
- - Does't switch off VOUT if the battery hits the lower threshold. It only signals it using a pin.
+ - Doesn't switch off VOUT if the battery hits the lower threshold. It only signals it using a pin.
 
   - Rather annoying pin configuration. Layouting it doesn't make much fun.
 
  Honestly - It's an old thing compared to the latest generation from ST or e-peas.
  
- 
+
 ### Why not buying a "naked" ST STM32WLE55? 
 
 Using a SoC module from RAK brings all the HF and impedancy matching. 
 
-Every leaving the housing is mostly not critically signal wise.
+Everything else leaving the housing is not really critical signal wise.
 
 Also it's not too expensive with 6€.
 
