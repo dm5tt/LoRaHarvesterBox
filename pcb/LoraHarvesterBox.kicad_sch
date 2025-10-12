@@ -2547,6 +2547,196 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Power_Management:TPS22917DBV"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPS22917DBV"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps22917.pdf"
+				(at 1.27 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1V to 5.5V, 2A, 80mΩ Ultra-Low Leakage Load Switch, SOT23-6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "high-side power distribution switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS22917DBV_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS22917DBV_1_1"
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "CT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "ON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "QOD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "SolarMeshRepeater_Lib:FM24V10-GTR_C466851"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4742,8 +4932,16 @@
 		(uuid "e7b76d8d-3242-4b0f-83fd-370c07eca6ef")
 	)
 	(no_connect
+		(at 127 201.93)
+		(uuid "1e76d813-a8c8-4d4a-8574-e26fb220c57d")
+	)
+	(no_connect
 		(at 123.19 63.5)
 		(uuid "3018f284-9792-44fa-828d-0acc3956a396")
+	)
+	(no_connect
+		(at 106.68 201.93)
+		(uuid "b3481286-c053-411e-a76a-eae7c68cc342")
 	)
 	(no_connect
 		(at 123.19 48.26)
@@ -5261,6 +5459,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 199.39) (xy 130.81 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ce990d6-1fcd-4551-922b-88f8a7ccddc2")
+	)
+	(wire
+		(pts
 			(xy 49.53 179.07) (xy 49.53 182.88)
 		)
 		(stroke
@@ -5548,6 +5756,16 @@
 			(type default)
 		)
 		(uuid "56e2dd9e-e89c-4b83-9908-cf63c89e7e8b")
+	)
+	(wire
+		(pts
+			(xy 104.14 196.85) (xy 104.14 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573b2e43-f209-4b9e-8f47-6d8f1e5d67dc")
 	)
 	(wire
 		(pts
@@ -6471,6 +6689,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 204.47) (xy 106.68 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c18b9ac3-52d5-4f21-91ee-1c0d68175baf")
+	)
+	(wire
+		(pts
 			(xy 173.99 50.8) (xy 199.39 50.8)
 		)
 		(stroke
@@ -6648,6 +6876,16 @@
 			(type default)
 		)
 		(uuid "db99262a-d051-4652-a024-4c84e4db4e68")
+	)
+	(wire
+		(pts
+			(xy 116.84 209.55) (xy 116.84 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc05c65b-b433-49b0-8d71-3edb51955ef1")
 	)
 	(wire
 		(pts
@@ -6831,6 +7069,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 199.39) (xy 106.68 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5079dd6-ca26-4f5c-8233-c1556dbb0934")
+	)
+	(wire
+		(pts
 			(xy 154.94 114.3) (xy 154.94 116.84)
 		)
 		(stroke
@@ -7009,6 +7257,16 @@
 		)
 		(uuid "2f0b6524-264d-4b27-9dd1-a36f2c256ec9")
 	)
+	(label "Vdd_Input"
+		(at 130.81 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f7c1f05-9704-42e7-8d8d-15c9a9091473")
+	)
 	(label "VSTOR"
 		(at 171.45 128.27 90)
 		(effects
@@ -7038,6 +7296,16 @@
 			(justify right bottom)
 		)
 		(uuid "451effd3-db36-4a6f-ae3c-5d9acbb72517")
+	)
+	(label "VBAT_OK"
+		(at 104.14 204.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c8f0d31-e7c8-473c-8658-a42303adae97")
 	)
 	(label "+3V0"
 		(at 77.47 21.59 90)
@@ -7259,6 +7527,16 @@
 		)
 		(uuid "eeb08157-6f36-46d9-9f39-a1efd97dc614")
 	)
+	(label "Vdd_Input"
+		(at 182.88 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efddc67c-bcd8-4e89-8736-1e18067d7a09")
+	)
 	(label "BOOT"
 		(at 176.53 63.5 0)
 		(effects
@@ -7374,6 +7652,86 @@
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
 					(reference "ROK3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Management:TPS22917DBV")
+		(at 116.84 201.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "020b0183-29c7-4d06-810a-0d987166aa10")
+		(property "Reference" "U4"
+			(at 116.84 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS22917DBV"
+			(at 116.84 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 116.84 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps22917.pdf"
+			(at 118.11 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1V to 5.5V, 2A, 80mΩ Ultra-Low Leakage Load Switch, SOT23-6"
+			(at 116.84 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "11a35106-16ff-4b7f-a132-29053fd906ad")
+		)
+		(pin "6"
+			(uuid "020215ea-5bee-426d-ae8e-d5aeb17bafa5")
+		)
+		(pin "2"
+			(uuid "c6a97bbf-f5f5-4b89-ba57-91a12e16eed0")
+		)
+		(pin "1"
+			(uuid "8c262243-b48f-4f86-9566-d5d8c8bb80c2")
+		)
+		(pin "3"
+			(uuid "84ea9201-5fe6-461c-8470-98440254a08c")
+		)
+		(pin "5"
+			(uuid "70929fb2-c920-4c90-89f6-4669ed2e489b")
+		)
+		(instances
+			(project ""
+				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -8960,7 +9318,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "41554862-e403-49e1-87be-8b2f51830127")
 		(property "Reference" "#PWR010"
 			(at 215.9 137.16 0)
@@ -10488,16 +10845,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V0")
-		(at 182.88 55.88 270)
+		(lib_id "power:GND")
+		(at 116.84 212.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7e6ad0c4-8406-420a-86ec-9647470a54ae")
+		(fields_autoplaced yes)
+		(uuid "818ec1f1-1fa4-4ebd-ad0b-38c012e788c0")
 		(property "Reference" "#PWR021"
-			(at 179.07 55.88 0)
+			(at 116.84 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10505,17 +10863,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V0"
-			(at 186.69 55.8799 90)
+		(property "Value" "GND"
+			(at 116.84 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 55.88 0)
+			(at 116.84 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10524,7 +10881,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 55.88 0)
+			(at 116.84 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10532,8 +10889,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V0\""
-			(at 182.88 55.88 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10542,10 +10899,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa5ca345-694e-4343-afee-9c830196686f")
+			(uuid "ee0e4739-85e9-454f-ae39-b533101bded4")
 		)
 		(instances
-			(project ""
+			(project "LoraHarvesterBox"
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
 					(reference "#PWR021")
 					(unit 1)
@@ -12623,6 +12980,72 @@
 			(project ""
 				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V0")
+		(at 104.14 196.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da56d819-2103-46ed-a4be-08afa2638d39")
+		(property "Reference" "#PWR041"
+			(at 104.14 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V0"
+			(at 104.14 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V0\""
+			(at 104.14 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78bc3d8d-a78e-492e-9ab7-62a29fe53d78")
+		)
+		(instances
+			(project ""
+				(path "/a6f37965-abbf-44d1-94f3-9a9b9eaa16a8"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
