@@ -10,7 +10,7 @@ It is suitable for a wide range of applications, including:
 - Meshtastic (router, sensor) or Meshcore
 - LoRaWAN sensors
 - Generic raw LoRa devices
-- Or virtually any other custom project
+- Or virtually any other custom project (ham balloon? Transmitter for tracking penguins?) that utilizes the modulation schemes of  the SX1262
 
 For persistent data storage, an optional FRAM IC (Infineon FM24V10) can be mounted via I²C. A variety of sensors can be integrated through I²C, SPI (on the back), or USART interfaces.
 
@@ -28,7 +28,7 @@ The power supply design is highly flexible: alongside standard JST-PH connectors
 
 ### Microcontroller
 
-Uses the standardized RAK housing which can house a variety of platforms (ESP32, STM32, etc.) with compatible pins
+Uses the standardized RAK housing which can house a variety of platforms (ESP32, STM32, etc.) with compatible pins.
 
 - ST STM32WLE5CC: 256Kb Flash, 64Kb RAM, 48MHz
 - 2x USART
