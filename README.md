@@ -104,14 +104,14 @@ Improved system runtime by only loosing 1-2dB of TX power.
 | SWDIO | PA13 |
 | SWCLK | PA14 |
 
-##### SPI1
+##### SPI
 
 | Signal | Pin |
 |:--------|:----|
-| MOSI | PA7 |
-| MISO | PA6 |
-| CLK  | PA5 |
-| NSS  | PA4 |
+| SPI1, MOSI | PA7 |
+| SPI1, MISO | PA6 |
+| SPI1, CLK  | PA5 |
+| SPI1, NSS  | PA4 |
 
 #### LED
 
@@ -123,7 +123,7 @@ Improved system runtime by only loosing 1-2dB of TX power.
 
 | Signal | Pin |
 |:--------|:----|
-| VBAT_OK | PA15 |
+| VBAT_OK from TI BQ25570| PA15 |
 
 ### Resistors Values
 
