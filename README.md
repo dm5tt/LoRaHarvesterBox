@@ -7,7 +7,7 @@ This generic LoRa base board is built around the ST STM32WLE5CC (RAK3172) and th
 
 It is suitable for a wide range of applications, including:
 
-- Meshtastic (repeater, limited router, sensor)
+- Meshtastic (router, sensor) or Meshcore
 - LoRaWAN sensors
 - Generic raw LoRa devices
 - Or virtually any other custom project
