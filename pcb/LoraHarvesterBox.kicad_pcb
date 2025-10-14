@@ -6234,15 +6234,15 @@
 			(uuid "15f8754f-0696-4242-880e-b9e482e0cba3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_ZH_B4B-ZR_1x04_P1.50mm_Vertical.step"
+		(model "/home/had/Code/SolarLoRaBox/pcb/components/steps/B4B-ZR--3DModel-STEP-56544.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.1 -0.4 0)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1.05 1 1.1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -15480,7 +15480,7 @@
 		(uuid "a16ea570-0ba7-4868-a2e3-ad983f99fc70")
 	)
 	(via
-		(at 112.31 67.09)
+		(at 113.32 66.03)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -16999,6 +16999,14 @@
 		(uuid "7c43e8d0-7707-471b-aa4c-e691d4e8e014")
 	)
 	(segment
+		(start 111.71 80.89)
+		(end 110.76 80.89)
+		(width 1)
+		(layer "F.Cu")
+		(net 15)
+		(uuid "7eca736b-e982-4ab9-9026-4bc6b08f3c69")
+	)
+	(segment
 		(start 108.93 80.26)
 		(end 109.56 80.89)
 		(width 1)
@@ -17029,14 +17037,6 @@
 		(layer "B.Cu")
 		(net 15)
 		(uuid "2954ba13-4dd1-4afd-8efa-d8b3c24b3660")
-	)
-	(segment
-		(start 111.71 80.89)
-		(end 112.66 80.89)
-		(width 1)
-		(layer "B.Cu")
-		(net 15)
-		(uuid "7eca736b-e982-4ab9-9026-4bc6b08f3c69")
 	)
 	(segment
 		(start 115.42 88.2)
