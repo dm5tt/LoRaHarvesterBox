@@ -12,7 +12,7 @@ It is suitable for a wide range of applications, including:
 - Generic raw LoRa devices
 - Or virtually any other custom project (ham balloon? Transmitter for tracking penguins?) that utilizes the modulation schemes (FSK, GFSK, MSK, GMSK) of the SX1262
 
-For persistent data storage, an optional FRAM IC (Infineon FM24V10) can be mounted via I²C. A variety of sensors can be integrated through I²C, SPI (on the back), or USART interfaces.
+For persistent data storage, an optional FRAM IC (Infineon FM24V10) can be added using I²C. A variety of sensors can additonaly integrated through I²C, SPI (on the back), or USART interfaces.
 
 The power supply design is highly flexible: alongside standard JST-PH connectors, the board also supports very small LiPo batteries (commonly used in in-ear headphones or Bluetooth headsets), which can be soldered directly. Such batteries are readily available on AliExpress (e.g. 501010). The TI BQ25570 also supports exotic storages like Supercaps, LTO, etc.
 
@@ -20,7 +20,7 @@ The power supply design is highly flexible: alongside standard JST-PH connectors
 
 ### Energy
 
-- Capable of using a huge variety of energy storage devices: LiPo, LiFePo4, LTO, SIB, Supercap
+- Capable of handling a huge variety of energy storages: LiPo, LiFePo4, LTO, SIB, Supercap
 - Once cold-started (600mV) the TI BQ25570 energy harvester works down to 100mV. Maximum input voltage is 5.5V. 
 - Up to 110mA can be used from the application
 - MPPT
@@ -44,8 +44,6 @@ Uses the Semtech SX1262 integrated within the STM32 housing. Multiple RAK varian
 ### Data Storage
 
 Infineon FM24V10: 1-MBit non-volatile F-RAM for storing firmware updates, messages or mesurement data
-
-
 
 ## Design Decisions
 
@@ -82,6 +80,8 @@ Improved system runtime by only loosing 1-2dB of TX power.
 
 
 ### Pin Configuration
+
+![MeshtasticRouterNode](docs/LoraHarvesterBox_pins.jpg)
 
 #### ADC
 
