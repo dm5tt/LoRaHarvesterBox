@@ -10,7 +10,7 @@ It is suitable for a wide range of applications, including:
 - Meshtastic (router, sensor) or Meshcore
 - LoRaWAN sensors
 - Generic raw LoRa devices
-- Or virtually any other custom project (ham balloon? Transmitter for tracking penguins?) that utilizes the modulation schemes of  the SX1262
+- Or virtually any other custom project (ham balloon? Transmitter for tracking penguins?) that utilizes the modulation schemes (FSK, GFSK, MSK, GMSK) of the SX1262
 
 For persistent data storage, an optional FRAM IC (Infineon FM24V10) can be mounted via I²C. A variety of sensors can be integrated through I²C, SPI (on the back), or USART interfaces.
 
