@@ -3,7 +3,7 @@
 
 ## What is this thing?
 
-This generic LoRa base board is built around the ST STM32WLE5 (RAK3172) and the TI BQ25570 energy harvester.
+This generic LoRa base board is built around the ST STM32WLE5CC (RAK3172) and the TI BQ25570 energy harvester.
 
 It is suitable for a wide range of applications, including:
 
@@ -12,9 +12,39 @@ It is suitable for a wide range of applications, including:
 - Generic raw LoRa devices
 - Or virtually any other custom project
 
-For persistent data storage, an optional FRAM IC (Infineon FM24V10) can be mounted on the back and connected via I²C. A variety of sensors can be integrated through I²C, SPI (on the back), or USART interfaces.
+For persistent data storage, an optional FRAM IC (Infineon FM24V10) can be mounted via I²C. A variety of sensors can be integrated through I²C, SPI (on the back), or USART interfaces.
 
 The power supply design is highly flexible: alongside standard JST-PH connectors, the board also supports very small LiPo batteries (commonly used in in-ear headphones or Bluetooth headsets), which can be soldered directly. Such batteries are readily available on AliExpress (e.g. 501010). The TI BQ25570 also supports exotic storages like Supercaps, LTO, etc.
+
+## Features
+
+### Energy
+
+- Capable of using a huge variety of energy storage devices: LiPo, LiFePo4, LTO, SIB, Supercap
+- Once cold-started (600mV) the TI BQ25570 energy harvester works down to 100mV. Maximum input voltage is 5.5V. 
+- Up to 110mA can be used from the application
+- MPPT
+- Optional load-switch to switch on/off the entire STM32/LoRa-modem based on the VBAT_OK signal
+
+### Microcontroller
+
+Uses the standardized RAK housing which can house a variety of platforms (ESP32, STM32, etc.) with compatible pins
+
+- ST STM32WLE5CC: 256Kb Flash, 64Kb RAM, 48MHz
+- 2x USART
+- 1x I2C
+- 1x SPI (back)
+- 2x ADC connected to energy source (like solar) and and energy storage (like LiPos) using voltage dividers
+- Multiple break-out pins for GPIOs on the back
+
+### LoRa
+
+Uses the Semtech SX1262 integrated within the STM32 housing. Multiple RAK variants available for 433/470/868/915MHz.
+
+### Data Storage
+
+Infineon FM24V10: 1-MBit non-volatile F-RAM for storing firmware updates, messages or mesurement data
+
 
 
 ## Design Decisions
@@ -36,7 +66,7 @@ I'm not overly happy with this IC as it lacks a few helpful features:
  Honestly - It's an old thing compared to the latest generation from ST or e-peas.
  
  
-### Why not buying a "naked" ST STM32WLE55? 
+### Why not buying a "naked" ST STM32WLE5? 
 
 Using a SoC module from RAK brings all the HF and impedancy matching. 
 
@@ -50,6 +80,51 @@ Improved system runtime by only loosing 1-2dB of TX power.
 
 
 ## Hardware
+
+
+### Pin Configuration
+
+#### ADC
+
+| Signal | Pin | ADC Channel |
+|:--------|:----|:-------------|
+| Energy Storage Voltage | PB3 | A0 |
+| Energy Source Voltage  | PB4 | A1 |
+
+#### USART
+
+| Peripheral | TX Pin | RX Pin |
+|:------------|:--------|:--------|
+| UART1 | PB6 | PB7 |
+| UART2 | PA2 | PA3 |
+
+#### SWD
+
+| Signal | Pin |
+|:--------|:----|
+| SWDIO | PA13 |
+| SWCLK | PA14 |
+
+##### SPI1
+
+| Signal | Pin |
+|:--------|:----|
+| MOSI | PA7 |
+| MISO | PA6 |
+| CLK  | PA5 |
+| NSS  | PA4 |
+
+#### LED
+
+| Signal | Pin |
+|:--------|:----|
+| LED | PA8 |
+
+#### MISC
+
+| Signal | Pin |
+|:--------|:----|
+| VBAT_OK | PA15 |
 
 ### Resistors Values
 
