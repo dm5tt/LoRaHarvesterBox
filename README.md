@@ -211,9 +211,9 @@ Improved system runtime by only loosing 1-2dB of TX power.
 | 3.3 MΩ | 2.2 MΩ | 4.7 MΩ | 10.2 MΩ | ≈ 2.02 V     | ≈ 3.74 V     |
 
 
-### Pin Configuration
+### Hardware Verification
 
-JLCPCB accidentally send me the PCBs of someone else. So I'm  waiting for the latest hardware to test v0.0.5.
+JLCPCB accidentally send me the PCBs of someone else. So I'm  waiting for the latest hardware arrive to test v0.0.5.
 
 The older version (v0.0.3) already worked in the most parts but was prone to deep-discharge due to the non-interpretation of the VBAT_OK signal. 
 
