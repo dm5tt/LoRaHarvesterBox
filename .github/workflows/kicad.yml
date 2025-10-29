@@ -1,0 +1,84 @@
+name: Kicad ERC/DRC Check
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  kicad_checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up KiCad environment
+        uses: INTI-CMNB/KiBot@v1
+        with:
+          install_kicad: true
+          kicad_version: 9
+          # Adds caching for 3D models to speed up runs
+          cache3D: true
+
+      - name: Find and check all KiCad projects and report errors
+        run: |
+          set -e  # Exit immediately if any command fails
+          mkdir -p drc_reports # Create directory for reports
+          HAS_ERRORS=0
+
+          # Use 'find' to search recursively in all directories
+          # The 'while' loop reads each found file, even with spaces
+          find . -name "*.kicad_pcb" | while read -r PCB_FILE; do
+            # Get the directory, base filename, and schematic file path
+            DIR=$(dirname "$PCB_FILE")
+            BASE_NAME=$(basename "$PCB_FILE" .kicad_pcb)
+            SCH_FILE="$DIR/$BASE_NAME.kicad_sch"
+            
+            # Define report file names
+            ERC_REPORT="drc_reports/${BASE_NAME}.erc.rpt"
+            DRC_REPORT="drc_reports/${BASE_NAME}.drc.rpt"
+
+            if [ -f "$SCH_FILE" ]; then
+              echo "---"
+              echo "Checking: $SCH_FILE"
+              # Use KiCad 9's native CLI for ERC check
+              # Only fail on --severity-error
+              kicad-cli sch erc \
+                --output "$ERC_REPORT" \
+                --units mm \
+                --severity-error \
+                "$SCH_FILE" || HAS_ERRORS=1
+              
+              echo "Checking: $PCB_FILE"
+              # Use KiCad 9's native CLI for DRC check
+              # Only fail on --severity-error
+              kicad-cli pcb drc \
+                --output "$DRC_REPORT" \
+                --units mm \
+                --schematic-parity \
+                --severity-error \
+                "$PCB_FILE" || HAS_ERRORS=1
+
+            else
+              echo "---"
+              echo "Skipping: $PCB_FILE (No matching schematic found at $SCH_FILE)"
+            fi
+          done
+
+          # After checking all files, exit if any had errors
+          if [ "$HAS_ERRORS" -ne 0 ]; then
+            echo "---"
+            echo "ERC or DRC errors found. Check reports."
+            exit 1
+          else
+            echo "---"
+            echo "All projects passed ERC/DRC (warnings ignored)."
+          fi
+
+      - name: Upload ERC/DRC Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kicad-reports
+          path: drc_reports/
