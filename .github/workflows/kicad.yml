@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Refresh system packager mirrors and packages
+        run: sudo apt-get -y update
+    
       - name: Checkout repository
         uses: actions/checkout@v4
 
