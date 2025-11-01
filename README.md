@@ -80,10 +80,10 @@ Also it's not too expensive with 6€.
 
 #### ADC
 
-| Signal | Pin | ADC Channel |
-|:--------|:----|:-------------|
-| Energy Storage Voltage | PB3 | A0 |
-| Energy Source Voltage  | PB4 | A1 |
+| Signal | Pin | ADC Channel | Info | 
+|:--------:|:----:|:-------------:|:------:|
+| Energy Storage Voltage | PB3 | A0 | Voltage goes through a Voltage Divider |
+| Energy Source Voltage  | PB4 | A1 | Voltage goes through a Voltage Divider |
 
 #### USART
 
