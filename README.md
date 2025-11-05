@@ -223,10 +223,9 @@ Also it's not too expensive with 6€.
 
 ✅ Boosts 0.6V to 3.3 without energy storage attached
 
+☐ Lower and upper  VBAT_OK threshold: not testable at the moment.  My power supply is too noisy to emulate a power source.
 
-☐ Lower and upper  VBAT_OK threshold: not testable at the moment.  My power supply is too to emulate a power source.
-
-☐ Power switch (TI TPS22917DBV) - seems to work. But need a better power source due to its noisy behaviour.
+☐ Power switch (TI TPS22917DBV) - seems to work. But blocked to to point above.
 
 Findings:
  - The BQ25570 doesn't like my extremely noisy power supply as a storage emulation. It doesn't come up.
