@@ -208,9 +208,35 @@ Also it's not too expensive with 6€.
 
 ## Hardware Verification
 
-JLCPCB accidentally send me the PCBs of someone else. So I'm  waiting for the latest hardware arrive to test v0.0.5.
+### PCB Version v0.0.5
 
-The older version (v0.0.3) already worked in the most parts but was prone to deep-discharge due to the non-interpretation of the VBAT_OK signal. 
+
+![LoRaHarvesterBox PCB v0.0.5](docs/v005_pcb.jpg)
+
+**Power Chain**
+
+✅ 3.3V from TI BQ25570
+
+✅ Charges power storage as defined with R_OV1 and R_OV2
+
+✅ VBAT_OK signal with 3v3 LiPo attached as a storage
+
+✅ Boosts 0.6V to 3.3 without energy storage attached
+
+
+☐ Lower and upper  VBAT_OK threshold: not testable at the moment.  My power supply is too to emulate a power source.
+
+☐ Power switch (TI TPS22917DBV) - seems to work. But need a better power source due to its noisy behaviour.
+
+Findings:
+ - The BQ25570 doesn't like my extremely noisy power supply as a storage emulation. It doesn't come up.
+ - You have to be very careful as even the tolerance of 1% resistors (R_OV1 and R_OV2) might cause overcharging. So stay away from the hard limits of your battery.
+
+
+**ST STM32WL55**
+
+✅ Connect to the SWD interface using a ST-Link
+
 
 ## License
 
