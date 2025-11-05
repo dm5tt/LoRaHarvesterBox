@@ -219,9 +219,9 @@ Also it's not too expensive with 6€.
 
 ✅ Charges power storage as defined with R_OV1 and R_OV2
 
-✅ VBAT_OK signal with 3v3 LiPo attached as a storage
+✅ VBAT_OK signal with 3.3V LiPo attached as a storage
 
-✅ Boosts 0.6V to 3.3 without energy storage attached
+✅ Boosts 0.6V to 3.3V without energy storage attached
 
 ☐ Lower and upper  VBAT_OK threshold: not testable at the moment.  My power supply is too noisy to emulate a power source.
 
