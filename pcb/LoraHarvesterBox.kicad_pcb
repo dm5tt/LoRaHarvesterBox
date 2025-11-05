@@ -6234,7 +6234,7 @@
 			(uuid "15f8754f-0696-4242-880e-b9e482e0cba3")
 		)
 		(embedded_fonts no)
-		(model "/home/had/Code/SolarLoRaBox/pcb/components/steps/B4B-ZR--3DModel-STEP-56544.STEP"
+		(model "/home/had/Code/LoRaHarvesterBox/pcb/own_lib/B4B-ZR--3DModel-STEP-56544.STEP"
 			(offset
 				(xyz 2.1 -0.4 0)
 			)

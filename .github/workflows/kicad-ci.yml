@@ -1,0 +1,37 @@
+name: Kicad ERC/DRC Check
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  kicad_checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up KiCad environment
+        uses: INTI-CMNB/KiBot@v1
+        with:
+          install_kicad: true
+          kicad_version: 9 
+
+      - name: Find and check all KiCad ECAD files in pcb/
+        run: |
+          set -e
+          for PCB in pcb/*.kicad_pcb; do
+            SCH="${PCB%.kicad_pcb}.kicad_sch"
+            if [ -f "$SCH" ]; then
+              echo "Checking: $PCB & $SCH"
+              kibot -b "$PCB" -e "$SCH" \
+                --drc --erc \
+                --no-field-errors \
+                --exit-error
+            else
+              echo "No matching schematic for $PCB"
+            fi
+          done
+
