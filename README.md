@@ -122,8 +122,9 @@ Also it's not too expensive with 6€.
 
 ### Resistors Values
 
-#### VOUT
+**Warning:** You have to be super careful here. Don't trust your 1%-SMD-Resistor book. Measure each resistor with a high-resolution multimeter and then caluclate the voltages according to the readings!
 
+#### VOUT
 
 | Target VOUT | R_OUT1  | R_OUT2 | R_SUM | Calculated VOUT |
 |-------------|--------------|--------------|------------|-----------------|
