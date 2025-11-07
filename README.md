@@ -21,7 +21,7 @@ The power supply design is highly flexible: alongside standard JST-PH connectors
 ### Energy
 
 - Capable of handling a huge variety of energy storages: LiPo, LiFePo4, LTO, SIB, Supercap
-- Once cold-started (600mV) the TI BQ25570 energy harvester works down to 100mV. Maximum input voltage is 5.5V. 
+- Starts boosting at 600mV. Maximum input voltage is 5.5V. 
 - Up to 110mA can be used from the application
 - MPPT
 - Optional load-switch to switch on/off the entire STM32/LoRa-modem based on the VBAT_OK signal
