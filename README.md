@@ -122,7 +122,7 @@ Also it's not too expensive with 6€.
 
 ### Resistors Values
 
-**Warning:** You have to be super careful here. Don't trust your 1%-SMD-Resistor book from Aliexpress or Amazon. Measure each resistor with a high-resolution multimeter and then caluclate the voltages according to the readings!
+**Warning:** You have to be super careful here. Don't trust your 1%-SMD-Resistor book from Aliexpress or Amazon. Measure each resistor with a high-resolution multimeter and then calculate the voltages according to the readings! A shabby Libreoffice Calc sheet can be found within the `docs` folder to do this.
 
 #### VOUT
 
