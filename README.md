@@ -28,9 +28,10 @@ The power supply design is highly flexible: alongside standard JST-PH connectors
 
 ### Microcontroller
 
-Uses the standardized RAK housing which can house a variety of platforms (ESP32, STM32, etc.) with compatible pins.
+Uses the standardized RAK housing which can house a variety of platforms (ESP32, STM32, etc.) with compatible pins. This variant uses the RAK3172  (ST STM32WLE5CC: 256Kb Flash, 64Kb RAM, 48MHz).
 
-- ST STM32WLE5CC: 256Kb Flash, 64Kb RAM, 48MHz
+Exposed interfaces:
+
 - 2x USART
 - 1x I2C
 - 1x SPI (back)
