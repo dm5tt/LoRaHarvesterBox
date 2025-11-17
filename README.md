@@ -123,90 +123,11 @@ Also it's not too expensive with 6€.
 
 ### Resistors Values
 
-**Warning:** You have to be super careful here. Don't trust your 1%-SMD-Resistor book from Aliexpress or Amazon. Measure each resistor with a high-resolution multimeter and then calculate the voltages according to the readings! A shabby Libreoffice Calc sheet can be found within the `docs` folder to do this.
+**Warning:** 
 
-#### VOUT
+You have to be super careful here. Don't trust your 1%-SMD-Resistor book from Aliexpress or Amazon. Measure each resistor with a high-resolution multimeter and then calculate the voltages according to the readings! A shabby Libreoffice Calc sheet can be found within the `docs` folder to do this.
 
-| Target VOUT | R_OUT1  | R_OUT2 | R_SUM | Calculated VOUT |
-|-------------|--------------|--------------|------------|-----------------|
-| 1.8 V       | 8.66 MΩ       | 4.22 MΩ       | 12.88 MΩ      | ≈ 1.80V        |
-| 3.0 V       | 5.10 MΩ       | 7.50 MΩ       | 12.60 MΩ     | ≈ 2.99V        |
-| 3.3 V       | 4.70 MΩ       | 8.20 MΩ       | 12.90 MΩ     | ≈ 3.32V        |
-
-#### LiPo (1-cell)
-
-| R_OV1 | R_OV2 | R_SUM | V_OV |
-|-------------|-------------|------------|-----------|
-| 3.90 MΩ     | 5.10 MΩ     | 9.00       | ≈ 4.18V   |
-| 3.60 MΩ     | 4.70 MΩ     | 8.30       | ≈ 4.18V   |
-| 3.30 MΩ     | 4.30 MΩ     | 7.60       | ≈ 4.18V   |
-| 4.30 MΩ     | 5.60 MΩ     | 9.90       | ≈ 4.17V   |
-| 5.10 MΩ     | 6.20 MΩ     | 11.90      | ≈ 4.02V   |
-
-| R_OK1   | R_OK2   | R_OK3   | R_SUM    | VBAT_OK_PROG | VBAT_OK_HYST |
-|---------|---------|---------|----------|--------------|--------------|
-| 4.32 MΩ | 6.04 MΩ | 2.70 MΩ | 13.06 MΩ | ≈ 2.90 V     | ≈ 3.66 V     |
-| 4.32 MΩ | 6.19 MΩ | 2.40 MΩ | 12.91 MΩ | ≈ 2.94 V     | ≈ 3.62 V     |
-| 4.32 MΩ | 6.34 MΩ | 2.40 MΩ | 13.06 MΩ | ≈ 2.98 V     | ≈ 3.66 V     |
-| 4.32 MΩ | 6.80 MΩ | 2.20 MΩ | 13.32 MΩ | ≈ 3.12 V     | ≈ 3.73 V     |
-| 4.30 MΩ | 7.50 MΩ | 1.60 MΩ | 13.40 MΩ | ≈ 3.13 V     | ≈ 3.57 V     |
-
-#### LTO (1-cell), Untested
-
-| R_OV1 | R_OV2 | R_SUM | V_OV (V) |
-|-------------|-------------|------------|----------|
-| 5.60 MΩ     | 2.74 MΩ     | 8.34 MΩ      | ≈ 2.70V     |
-| 6.20 MΩ     | 3.00 MΩ     | 9.20 MΩ      | ≈ 2.69V     |
-| 5.10 MΩ     | 2.74 MΩ     | 7.84 MΩ      | ≈ 2.79V     |
-| 6.20 MΩ     | 3.30 MΩ     | 9.50 MΩ      | ≈ 2.78V     |
-| 5.10 MΩ     | 2.87 MΩ     | 7.97 MΩ      | ≈ 2.84V     |
-
-| R_OK1   | R_OK2   | R_OK3   | R_SUM    | VBAT_OK_PROG | VBAT_OK_HYST |
-|---------|---------|---------|----------|--------------|--------------|
-| 5.62 MΩ | 3.60 MΩ | 3.32 MΩ | 12.54 MΩ | ≈ 1.98 V     | ≈ 2.56 V     |
-| 5.90 MΩ | 3.90 MΩ | 2.87 MΩ | 12.67 MΩ | ≈ 2.01 V     | ≈ 2.59 V     |
-| 5.90 MΩ | 3.74 MΩ | 3.01 MΩ | 12.65 MΩ | ≈ 1.98 V     | ≈ 2.59 V     |
-| 6.04 MΩ | 4.02 MΩ | 2.61 MΩ | 12.67 MΩ | ≈ 2.02 V     | ≈ 2.53 V     |
-| 5.62 MΩ | 3.48 MΩ | 3.01 MΩ | 12.11 MΩ | ≈ 1.96 V     | ≈ 2.80 V     |
-| 5.49 MΩ | 3.32 MΩ | 2.74 MΩ | 11.55 MΩ | ≈ 1.94 V     | ≈ 2.58 V     |
-
-#### Na-Ion (1-cell), Untested
-
-| R_OV1   | R_OV2   | R_SUM   | V_OV (V) |
-|---------|---------|---------|----------|
-| 12.0 MΩ | 0.24 MΩ | 12.24 MΩ| ≈ 3.70 V |
-| 12.0 MΩ | 0.56 MΩ | 12.56 MΩ| ≈ 3.80 V |
-| 10.0 MΩ | 0.75 MΩ | 10.75 MΩ| ≈ 3.90 V |
-| 11.0 MΩ | 1.00 MΩ | 12.00 MΩ| ≈ 3.97 V |
-| 12.0 MΩ | 0.82 MΩ | 12.82 MΩ| ≈ 3.93 V |
-
-| R_OK1   | R_OK2   | R_OK3   | R_SUM    | VBAT_OK_PROG | VBAT_OK_HYST |
-|---------|---------|---------|----------|--------------|--------------|
-| 4.02 MΩ | 2.61 MΩ | 4.32 MΩ | 10.95 MΩ | ≈ 2.00 V     | ≈ 3.30 V     |
-| 3.92 MΩ | 2.61 MΩ | 4.32 MΩ | 10.85 MΩ | ≈ 2.02 V     | ≈ 3.35 V     |
-| 3.74 MΩ | 2.74 MΩ | 4.02 MΩ | 10.50 MΩ | ≈ 2.10 V     | ≈ 3.40 V     |
-| 4.12 MΩ | 2.87 MΩ | 4.02 MΩ | 11.01 MΩ | ≈ 2.06 V     | ≈ 3.25 V     |
-| 3.65 MΩ | 2.99 MΩ | 3.60 MΩ | 10.24 MΩ | ≈ 2.21 V     | ≈ 3.40 V     |
-
-#### LiFePo4 (1-cell), Untested
-
-| R_OV1   | R_OV2   | R_SUM    | V_OV (V) |
-|---------|---------|----------|----------|
-| 12.0 MΩ | 68 kΩ   | 12.068 MΩ| ≈ 3.651  |
-| 11.0 MΩ | 62 kΩ   | 11.062 MΩ| ≈ 3.650  |
-| 10.0 MΩ | 56 kΩ   | 10.056 MΩ| ≈ 3.650  |
-| 8.20 MΩ | 158 kΩ   | 8.358 MΩ  | ≈ 3.700  |
-
-| R_OK1  | R_OK2  | R_OK3  | R_SUM   | VBAT_OK_PROG | VBAT_OK_HYST |
-|--------|--------|--------|---------|--------------|--------------|
-| 4.7 MΩ | 3.3 MΩ | 5.6 MΩ | 13.6 MΩ | ≈ 2.06 V     | ≈ 3.50 V     |
-| 4.3 MΩ | 3.3 MΩ | 5.1 MΩ | 12.7 MΩ | ≈ 2.14 V     | ≈ 3.57 V     |
-| 3.9 MΩ | 3.0 MΩ | 4.7 MΩ | 11.6 MΩ | ≈ 2.14 V     | ≈ 3.60 V     |
-| 3.6 MΩ | 2.7 MΩ | 4.3 MΩ | 10.6 MΩ | ≈ 2.12 V     | ≈ 3.56 V     |
-| 5.1 MΩ | 3.9 MΩ | 5.6 MΩ | 14.6 MΩ | ≈ 2.14 V     | ≈ 3.46 V     |
-| 3.3 MΩ | 2.7 MΩ | 3.9 MΩ | 9.9 MΩ  | ≈ 2.20 V     | ≈ 3.63 V     |
-| 3.3 MΩ | 2.2 MΩ | 4.7 MΩ | 10.2 MΩ | ≈ 2.02 V     | ≈ 3.74 V     |
-
+I wrote a script for calculating proper resistor values here: [ti-bq25570-calculator](https://github.com/h0lad/ti-bq25570-calculator).
 
 ## Hardware Verification
 
